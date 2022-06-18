@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora</title>
 </head>
+
 <body>
     <script src="calculadora.js"></script>
-    
+    <div class="Container">
+        <div class="Color">
+            <div class="NumberC">
+                <p id="resultado"></p>
+            </div>
+            <div class="ListN">
+                <a><button class="Botao" onclick="clean()">C</button></a>
+                <a><button class="Botao" onclick="back()"><</button></a>
+                <a><button class="Botao" onclick="insert('/')">/</button></a>
+                <a><button class="Botao" onclick="insert('X')">X</button></a>
+            </div>
+
+            <div>
+                <a><button class="Botao" onclick="insert('7')">7</button></a>
+                <a><button class="Botao" onclick="insert('8')">8</button></a>
+                <a><button class="Botao" onclick="insert('9')">9</button></a>
+                <a><button class="Botao" onclick="insert('-')">-</button></a>
+            </div>
+
+            <div>
+                <a><button class="Botao" onclick="insert('4')">4</button></a>
+                <a><button class="Botao" onclick="insert('5')">5</button></a>
+                <a><button class="Botao" onclick="insert('6')">6</button></a>
+                <a><button class="Botao" onclick="insert('+')">+</button></a>
+            </div>
+
+            <div>
+                <a><button class="Botao" onclick="insert('1')">1</button></a>
+                <a><button class="Botao" onclick="insert('2')">2</button></a>
+                <a><button class="Botao" onclick="insert('3')">3</button></a>
+                <a><button class="Botao" onclick="insert('=')">=</button></a>
+            </div>
+
+            <div>
+                <a><button class="Botao BotaoZero" onclick="insert('0')">0</button></a>
+                <a><button class="Botao" onclick="insert('.')">.</button></a>
+            </div>
+            
+        </div>
+    </div>
 </body>
+
 </html>
